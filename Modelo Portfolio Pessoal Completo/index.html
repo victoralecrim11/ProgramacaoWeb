@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Pessoal</title>
+  <title>Victor Alecrim - Desenvolvedor Web</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
   <header class="header">
     <nav class="nav">
       <div class="nav-brand">
-        <h2>Meu Portfolio</h2>
+        <h2>Victor Alecrim</h2>
       </div>
       <ul class="nav-menu">
         <li><a href="#home" class="nav-link">Home</a></li>
@@ -22,10 +22,15 @@
         <li><a href="#skills" class="nav-link">Habilidades</a></li>
         <li><a href="#contact" class="nav-link">Contato</a></li>
       </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </nav>
   </header>
@@ -34,8 +39,10 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Olá, eu sou <span class="highlight">Desenvolvedor</span></h1>
-        <p>Desenvolvedor Web Full Stack apaixonado por criar experiências digitais incríveis</p>
+        <h1>Olá, eu sou <span class="highlight">Victor Alecrim</span></h1>
+        <p>🎓 Estudante de Ciência da Computação - 4° Período</p>
+        <p>💻 Apaixonado por desenvolvimento web e entusiasta de tecnologia</p>
+        <p>🎯 Objetivo: me tornar um desenvolvedor full-stack experiente</p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">Ver Projetos</a>
           <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
@@ -43,7 +50,12 @@
       </div>
       <div class="hero-image">
         <div class="profile-image">
-          <i class="fas fa-user-circle"></i>
+          <img
+            src="https://avatars.githubusercontent.com/u/182650018?v=4"
+            alt="Foto de Victor Alecrim"
+            width="300"
+            height="300"
+          />
         </div>
       </div>
     </div>
@@ -56,25 +68,38 @@
       <div class="about-content">
         <div class="about-image">
           <div class="image-placeholder">
-            <i class="fas fa-user"></i>
+            <img
+              src="https://avatars.githubusercontent.com/u/182650018?v=4"
+              alt="Victor Alecrim"
+              width="300"
+              height="300"
+            />
           </div>
         </div>
         <div class="about-text">
-          <h3>Desenvolvedor Web Full Stack</h3>
-          <p>Com mais de 3 anos de experiência em desenvolvimento web, sou apaixonado por criar soluções digitais inovadoras e funcionais. Especializado em tecnologias modernas como React, Node.js e Python.</p>
-          <p>Meu objetivo é sempre entregar projetos de alta qualidade que atendam às necessidades dos clientes e proporcionem uma excelente experiência do usuário.</p>
+          <h3>Desenvolvedor Web em Formação</h3>
+          <p>Estudante de Bacharelado em Ciências da Computação na Newton Paiva, 
+             com previsão de formatura para dezembro de 2028, e possuo formação 
+             técnica em Informática pelo Colégio COTEMIG, finalizada em dezembro de 2023.</p>
+          <p>Durante meu estágio, adquiri experiência em suporte e desenvolvimento 
+             de sistemas, trabalhando na manutenção e atualização de sistemas de 
+             gestão empresarial. Tenho fluência intermediária em inglês e certificados 
+             em diversos cursos de TI, incluindo JavaScript, Git, HTML5, CSS3, C# e .NET.</p>
+          <p>Minhas habilidades técnicas abrangem linguagens como PHP, JavaScript, 
+             Laravel e VueJS, além de experiência em MySQL, Python e ferramentas 
+             como Microsoft Visual Studio e Visual Studio Code.</p>
           <div class="about-stats">
             <div class="stat">
-              <h4>50+</h4>
-              <p>Projetos Concluídos</p>
+              <h4>4</h4>
+              <p>Período Atual</p>
             </div>
             <div class="stat">
-              <h4>3+</h4>
-              <p>Anos de Experiência</p>
+              <h4>2+</h4>
+              <p>Anos de Estudo</p>
             </div>
             <div class="stat">
-              <h4>30+</h4>
-              <p>Clientes Satisfeitos</p>
+              <h4>10+</h4>
+              <p>Projetos Desenvolvidos</p>
             </div>
           </div>
         </div>
@@ -129,16 +154,17 @@
             <i class="fas fa-laptop-code"></i>
           </div>
           <div class="project-content">
-            <h3>E-commerce Platform</h3>
-            <p>Plataforma completa de e-commerce com sistema de pagamentos e gestão de estoque.</p>
+            <h3>E-commerce Moderno</h3>
+            <p>Plataforma de e-commerce desenvolvida com React e Node.js,
+               incluindo sistema de pagamento e gestão de estoque.</p>
             <div class="project-tech">
               <span>React</span>
               <span>Node.js</span>
               <span>MongoDB</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-small">Ver Projeto</a>
-              <a href="#" class="btn btn-small btn-outline">Código</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Ver Projeto</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Código</a>
             </div>
           </div>
         </div>
@@ -148,15 +174,16 @@
           </div>
           <div class="project-content">
             <h3>Dashboard Analytics</h3>
-            <p>Dashboard interativo para análise de dados com visualizações em tempo real.</p>
+            <p>Dashboard interativo para análise de dados com visualizações em
+               tempo real e relatórios personalizáveis.</p>
             <div class="project-tech">
               <span>Vue.js</span>
               <span>Python</span>
               <span>PostgreSQL</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-small">Ver Projeto</a>
-              <a href="#" class="btn btn-small btn-outline">Código</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Ver Projeto</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Código</a>
             </div>
           </div>
         </div>
@@ -165,16 +192,36 @@
             <i class="fas fa-mobile-alt"></i>
           </div>
           <div class="project-content">
-            <h3>App Mobile</h3>
-            <p>Aplicativo móvel para gestão de tarefas com sincronização em nuvem.</p>
+            <h3>App de Gerenciamento</h3>
+            <p>Aplicação web para gerenciamento de tarefas e projetos com
+               interface responsiva e funcionalidades colaborativas.</p>
             <div class="project-tech">
-              <span>React Native</span>
-              <span>Firebase</span>
-              <span>Redux</span>
+              <span>Angular</span>
+              <span>PHP</span>
+              <span>MySQL</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-small">Ver Projeto</a>
-              <a href="#" class="btn btn-small btn-outline">Código</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Ver Projeto</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Código</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="project-content">
+            <h3>Portfólio Pessoal</h3>
+            <p>Site portfólio responsivo desenvolvido com HTML, CSS e JavaScript
+               puro, otimizado para performance e acessibilidade.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Ver Projeto</a>
+              <a href="https://github.com/victoralecrim11" target="_blank" class="btn btn-small btn-outline">Código</a>
             </div>
           </div>
         </div>
@@ -193,15 +240,6 @@
             <div class="skill-item">
               <div class="skill-info">
                 <span>JavaScript</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>React</span>
                 <span>85%</span>
               </div>
               <div class="skill-bar">
@@ -210,7 +248,34 @@
             </div>
             <div class="skill-item">
               <div class="skill-info">
-                <span>Node.js</span>
+                <span>HTML5/CSS3</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PHP</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL</span>
                 <span>80%</span>
               </div>
               <div class="skill-bar">
@@ -219,11 +284,11 @@
             </div>
             <div class="skill-item">
               <div class="skill-info">
-                <span>Python</span>
-                <span>75%</span>
+                <span>C#</span>
+                <span>70%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress" style="width: 75%"></div>
+                <div class="skill-progress" style="width: 70%"></div>
               </div>
             </div>
           </div>
@@ -272,36 +337,39 @@
           <div class="contact-details">
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
-              <span>contato@exemplo.com</span>
+              <span>victorcarmoalecrim@gmail.com</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-phone"></i>
-              <span>+55 (11) 99999-9999</span>
+              <span>+55 (31) 98429-0938</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
-              <span>São Paulo, SP - Brasil</span>
+              <span>Minas Gerais, BH - Brasil</span>
             </div>
           </div>
           <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/victor-alecrim-90797a239/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/victoralecrim11" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/victoralecrim11" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <form class="contact-form">
           <div class="form-group">
-            <input type="text" placeholder="Seu Nome" required>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Seu Email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu Email" required>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Assunto" required>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
           </div>
           <div class="form-group">
-            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
         </form>
@@ -314,7 +382,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-text">
-          <p>&copy; 2024 Meu Portfolio. Todos os direitos reservados.</p>
+          <p>&copy; 2024 Victor Alecrim. Todos os direitos reservados.</p>
         </div>
         <div class="footer-links">
           <a href="#home">Home</a>
