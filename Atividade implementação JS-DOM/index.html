@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando a dom com JS</title>
+
+    <style>
+      body {
+        margin-left: 100px;
+        margin-top: 100px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Manipulando a DOM com JS</h1>
+
+    <input type="text" id="entrada" placeholder="Digite uma mensagem" />
+    <button class="btnMostrar" onclick="ExibirTexto()">Mostrar</button>
+    <button class="btnLimpar" onclick="LimparTexto()">Limpar</button>
+
+    <div id="resultado"></div>
+
+    <h2>Contador</h2>
+    <div id="contador">0</div>
+    <button id="btnMais" onclick="incrementarContador()">+</button>
+    <button id="btnMenos" onclick="decrementarContador()">-</button>
+    <button id="btnZerar" onclick="zerarContador()">Zerar</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
